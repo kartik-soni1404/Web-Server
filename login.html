@@ -1,0 +1,54 @@
+<html>
+<head>
+  <title>Login Page </title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<style>h1 {
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif	;
+    color: orange;
+    
+
+
+}</style>
+<body  background="download.jpg">
+
+  <div id="login_div" class="main-div">
+    <h1 style="font-size:60px;">Login To Monitor Activity</h1>    
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAOzBay7blZ2p6bY1GXBai2mfCzMQzXZqM",
+    authDomain: "cool-806df.firebaseapp.com",
+    databaseURL: "https://cool-806df.firebaseio.com",
+    projectId: "cool-806df",
+    storageBucket: "cool-806df.appspot.com",
+    messagingSenderId: "1019607235829"
+  };
+  firebase.initializeApp(config);
+
+</script>
+  <script src="index.js"></script>
+
+</body>
+</html>
